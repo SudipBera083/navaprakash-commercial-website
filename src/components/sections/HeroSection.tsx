@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
               A modern digital concept demonstrating how Navaprakash Commercial can showcase products, receive customer enquiries, and build a credible online business presence.
             </p>
 
-            {/* Primary & Secondary CTAs */}
+            {/* Primary & Secondary CTAs with Guaranteed Contrast */}
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
               <Button
                 to="/quote"
@@ -52,12 +52,12 @@ export const HeroSection: React.FC = () => {
                 Request a Quote
               </Button>
 
-              {/* Fix for low-contrast button text: high-contrast text-white with distinct border & background */}
+              {/* High-contrast secondary button: white text on dark background with clean border */}
               <Button
                 to="/products"
-                variant="secondary"
+                variant="white-outline"
                 size="lg"
-                className="bg-slate-800/90 text-white border border-slate-500 hover:border-white hover:bg-slate-700 font-semibold text-sm px-7 py-3.5 shadow-xs transition-colors"
+                className="text-sm uppercase tracking-wider px-7 py-3.5"
               >
                 Explore Products
               </Button>

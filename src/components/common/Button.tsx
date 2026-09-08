@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'gold' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline' | 'gold' | 'ghost' | 'white-outline' | 'white';
   size?: 'sm' | 'md' | 'lg';
   href?: string;
   to?: string;
@@ -22,7 +22,7 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseStyles = "inline-flex items-center justify-center font-medium rounded-md tracking-wide transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-corporate-gold focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none";
+  const baseStyles = "inline-flex items-center justify-center font-medium rounded-md tracking-wide transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-corporate-gold focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none";
 
   const sizeStyles = {
     sm: "text-xs px-3.5 py-1.5 gap-1.5",
@@ -36,6 +36,8 @@ export const Button: React.FC<ButtonProps> = ({
     secondary: "bg-white text-corporate-navy border border-slate-300 hover:bg-slate-50 hover:border-slate-400 shadow-sm",
     outline: "bg-transparent text-corporate-navy border border-corporate-navy/20 hover:border-corporate-navy hover:bg-corporate-navy/5",
     ghost: "bg-transparent text-corporate-text-muted hover:text-corporate-navy hover:bg-slate-100",
+    'white-outline': "bg-slate-900/60 text-white border-2 border-white/80 hover:bg-white hover:text-corporate-navy hover:border-white font-semibold shadow-xs",
+    'white': "bg-white text-corporate-navy hover:bg-slate-100 border border-white font-semibold shadow-sm",
   };
 
   const widthStyle = fullWidth ? "w-full" : "";

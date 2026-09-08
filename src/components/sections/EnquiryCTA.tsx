@@ -35,9 +35,9 @@ export const EnquiryCTA: React.FC = () => {
 
           <Button
             to="/contact"
-            variant="secondary"
+            variant="white-outline"
             size="lg"
-            className="bg-slate-800/90 text-white border border-slate-500 hover:border-white hover:bg-slate-700 font-medium text-sm px-7 py-3.5 shadow-xs transition-colors"
+            className="font-medium text-sm px-7 py-3.5"
           >
             Contact Information
           </Button>
