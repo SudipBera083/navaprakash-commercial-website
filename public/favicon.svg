@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0B192C" />
+  <rect x="2" y="2" width="60" height="60" rx="12" stroke="#D97706" stroke-opacity="0.3" stroke-width="2"/>
+  <!-- Stylized Geometric N Monogram -->
+  <path d="M19 46V18L33 36V18H45V46L31 28V46H19Z" fill="url(#gold-gradient)" />
+  <defs>
+    <linearGradient id="gold-gradient" x1="19" y1="18" x2="45" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B" />
+      <stop offset="1" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+</svg>
